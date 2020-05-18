@@ -1,0 +1,9 @@
+import * as mongoose from 'mongoose';
+
+export const TaskSchema = new mongoose.Schema({
+  title: String,
+  description: String,
+  author: String,
+  executor: String,
+  completed: Boolean,
+});
